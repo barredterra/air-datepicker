@@ -1298,7 +1298,7 @@ export default class Datepicker {
 
     }
 
-    _onChangeTime = ({hours, minutes}) => {
+    _onChangeTime = ({hours, minutes, seconds}) => {
         let today = new Date();
         let {lastSelectedDate, opts: {onSelect}} = this;
         let targetDate = lastSelectedDate;

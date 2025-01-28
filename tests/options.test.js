@@ -791,6 +791,7 @@ describe('OPTIONS TESTS', () => {
             dp.trigger(consts.eventChangeTime, {
                 hours: 20,
                 minutes: 20,
+                seconds: 20,
             });
 
             // Update lastSelectedDate and update time in `from` date
@@ -798,6 +799,7 @@ describe('OPTIONS TESTS', () => {
             dp.trigger(consts.eventChangeTime, {
                 hours: 10,
                 minutes: 10,
+                seconds: 10,
             });
 
             expect(timeFormat.format(dp.selectedDates[0])).toEqual('10:10');
@@ -817,12 +819,14 @@ describe('OPTIONS TESTS', () => {
             dp.trigger(consts.eventChangeTime, {
                 hours: 10,
                 minutes: 10,
+                seconds: 10,
             });
 
             dp.getCell(date).click();
             dp.trigger(consts.eventChangeTime, {
                 hours: 20,
                 minutes: 20,
+                seconds: 20,
             });
 
             expect(timeFormat.format(dp.selectedDates[0])).toEqual('10:10');
