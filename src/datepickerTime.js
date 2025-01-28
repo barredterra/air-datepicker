@@ -159,6 +159,7 @@ export default class DatepickerTime {
     setMinMaxTimeFromOptions() {
         let maxHoursPossible = 23,
             maxMinutesPossible = 59,
+            maxSecondsPossible = 59,
             {minHours, minMinutes, maxHours, maxMinutes, minSeconds, maxSeconds} = this.opts;
 
         this.minHours = clamp(minHours, 0, maxHoursPossible);
