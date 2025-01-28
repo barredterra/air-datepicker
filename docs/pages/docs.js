@@ -400,6 +400,15 @@ function Docs({} = {}) {
                                 <Param name={'maxMinutes'} type={'number'} defaultValue={'59'}>
                                     <Paragraph id={'optsMaxMinutes'}/>
                                 </Param>
+                                <Param name={'minSeconds'} type={'number'} defaultValue={'0'}>
+                                    <Paragraph id={'optsMinSeconds'}/>
+                                </Param>
+                                <Param name={'maxSeconds'} type={'number'} defaultValue={'59'}>
+                                    <Paragraph id={'optsMaxSeconds'}/>
+                                </Param>
+                                <Param name={'secondsStep'} type={'number'} defaultValue={'1'}>
+                                    <Paragraph id={'optsSecondsStep'}/>
+                                </Param>
                                 <Param name={'hoursStep'} type={'number'} defaultValue={'1'}>
                                     <Paragraph id={'optsHoursStep'}/>
                                 </Param>

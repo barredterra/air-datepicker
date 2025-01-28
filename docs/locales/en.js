@@ -182,8 +182,11 @@ export default {
     optsMaxHours: 'Maximum possible hours value.',
     optsMinMinutes: 'Minimum possible minutes value.',
     optsMaxMinutes: 'Maximum possible minutes value.',
+    optsMinSeconds: 'Minimum possible seconds value.',
+    optsMaxSeconds: 'Maximum possible seconds value.',
     optsHoursStep: 'Hours step.',
     optsMinutesStep: 'Minutes step.',
+    optsSecondsStep: 'Seconds step.',
     optsFixedHeight: 'Sets fixed height of the calendar. If {trueField} then there will be 6 weeks rendered in every month.',
 
     localeTitle: 'Localization',

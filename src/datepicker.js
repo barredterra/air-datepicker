@@ -367,6 +367,10 @@ export default class Datepicker {
             // Time in ms
             T: date.getTime(),
 
+            // Seconds
+            s: parsedDate.seconds,
+            ss: parsedDate.fullSeconds,
+
             // Minutes
             m: parsedDate.minutes,
             mm: parsedDate.fullMinutes,
@@ -1310,6 +1314,7 @@ export default class Datepicker {
 
         targetDate.setHours(hours);
         targetDate.setMinutes(minutes);
+        targetDate.setSeconds(seconds);
 
         if (!lastSelectedDate) {
             this.selectDate(targetDate);

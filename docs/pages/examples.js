@@ -378,8 +378,8 @@ export default function Examples() {
                                     id={'exampleTimeRangeNote'}
                                     tagName={'p'}
                                     values={{
-                                        commonOptions: <Code inline>{`minHours, maxHours, minMinutes, maxMinutes`}</Code>,
-                                        stepOptions: <Code inline>{`hoursStep, minutesStep`}</Code>
+                                        commonOptions: <Code inline>{`minHours, maxHours, minMinutes, maxMinutes, minSeconds, maxSeconds`}</Code>,
+                                        stepOptions: <Code inline>{`hoursStep, minutesStep, secondsStep`}</Code>
                                     }}
                                 />
                                 <FormattedMessage
@@ -505,6 +505,7 @@ export default function Examples() {
 
                                                     viewDate.setHours(today.getHours());
                                                     viewDate.setMinutes(today.getMinutes());
+                                                    viewDate.setSeconds(today.getSeconds());
 
                                                     dp.update({
                                                         timepicker: !dp.opts.timepicker,

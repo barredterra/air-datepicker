@@ -211,6 +211,7 @@ export let exampleButtonsAdvance = (messages) =>
                 // otherwise time will be equal to 00:00 if user navigated through datepicker
                 viewDate.setHours(today.getHours());
                 viewDate.setMinutes(today.getMinutes());
+                viewDate.setSeconds(today.getSeconds());
 
                 dp.update({
                     timepicker: !dp.opts.timepicker,

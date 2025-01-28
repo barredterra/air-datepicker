@@ -239,17 +239,19 @@ export default class DatepickerBody {
         if (selectedDates.length === 2) {
             // Add hours and minute to new selected date, to update time sliders properly
             if (this.rangeFromFocused && !isDateBigger(date, rangeDateTo)) {
-                let {hours, minutes} = getParsedDate(rangeDateFrom);
+                let {hours, minutes, seconds} = getParsedDate(rangeDateFrom);
                 date.setHours(hours);
                 date.setMinutes(minutes);
+                date.setSeconds(seconds);
 
                 this.dp.rangeDateFrom = date;
                 this.dp.replaceDate(rangeDateFrom, date);
             }
             if (this.rangeToFocused && !isDateSmaller(date, rangeDateFrom)) {
-                let {hours, minutes} = getParsedDate(rangeDateTo);
+                let {hours, minutes, seconds} = getParsedDate(rangeDateTo);
                 date.setHours(hours);
                 date.setMinutes(minutes);
+                date.setSeconds(seconds);
 
                 this.dp.rangeDateTo = date;
                 this.dp.replaceDate(rangeDateTo, date);
